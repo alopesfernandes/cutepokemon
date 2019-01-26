@@ -14,11 +14,24 @@ async function llamadaApi(pokemonUrl){
 const pintame = document.getElementById('content')
 
 function represent(pokemon){
-
-    pintame.innerHTML += `<b>${pokemon.name}</b> name: ${pokemon.abilities.name} <br>`
+    console.log(pokemon.abilities)
+    var abilities = ""
+    for (i = 0; i < pokemon.abilities.length; i++) {
+        abilities += `${pokemon.abilities[i].ability.name} `
+    }
+    console.log(pokemon.types)
+    var types = ""
+    for (i = 0; i < pokemon.types.length; i++) {
+        types += `${pokemon.types[i].type.name} `
+    }
+    pintame.innerHTML += `<br><br>${capitalize(pokemon.name)} <br> ${capitalize('abilities')}: ${abilities} <br> ${capitalize('types')}: ${types}`
 }
 
-let jigglypuff = document.getElementById('Jigglypuff')
+function capitalize(string) {
+    return `<b>${string.charAt(0).toUpperCase() + string.slice(1)}</b>`
+}
+
+let jigglypuff = document.getElementById('Jigglypuff') //querySelector('#Jigglipuff')
 
 jigglypuff.addEventListener('click',function(){
   llamadaApi(jigglypuffApi)
