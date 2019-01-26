@@ -34,6 +34,7 @@ function capitalize(string) {
 let jigglypuff = document.getElementById('Jigglypuff') //querySelector('#Jigglipuff')
 
 jigglypuff.addEventListener('click',function(){
+    //event.preventDefault()
   llamadaApi(jigglypuffApi)
 })
 
