@@ -4,44 +4,76 @@
   <style>
   .title{
   text-align: center;
-  font-size: 200%;
+  font-size: 300%;
   font: bold;
-  color: aquamarine;
+  color: hotpink;
   }
   .menu ul{
+    text-align: center;
     float: center;
     font-size: 150%;
     color: hotpink;
+    font-family: "Helvetica", sans-serif;
+  }
+  .button{
+    color: white;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: 2px solid aquamarine;
+    padding: 10px 20px 16px 20px;
+  }
+  .homebutton{
+    color: white;
+    background-color: aquamarine;
+    border-radius: 5px;
+    border: 1px solid aquamarine;
+    padding: 3px 5px 4px 5px;
+  }
+  .readme{
+    text-align: left;
+    font-size: 50%;
+    color: grey;
+    font-family: "Helvetica", sans-serif;
   }
   .content{
-    text-align: center
+    background-color: beige;
+    text-align: center;
+    font-size: 100%;
+    font: bold;
+    color: hotpink;
   }
   </style>
 
   <head>
   <div class="title">
     <b> Cutest Pokémon </b>
+    <input type="button" class="homebutton" onclick="location.href='index.html';" value="Home"/>
   </div>
   </head>
 
 <body>
 <div class="menu">
-  <ul>
-    <u>
-      <li id="Jigglypuff">Jigglypuff</li>
-      <li id="Pikachu">Pikachu</li>
-      <li id="Eevee">Eevee</li>
-      <li id="Mew">Mew</li>
-      <li id="Sylveon">Sylveon</li>
-    </u>
-  </ul>
+      <button class="button" id="Jigglypuff">JIGGLYPUFF</button>
+      <button class="button" id="Pikachu">PIKACHU</button>
+      <button class="button" id="Eevee">EEVEE</button>
+      <button class="button" id="Mew">MEW</button>
+      <button class="button" id="Sylveon">SYLVEON</button>
+      <button class="button" id="Sylveon">CREATE</button>
 </div>
 </body>
-
-<div class="content" id="content">
-
-
+<h1>
+<div class="readme">List of the 5 cutest Pokémons ever. Additionaly you can creat your own cute Pokemón
+  <p><u>Attributes</u></p>
+  <ul>
+  <li>Ability</li>
+  <li>Color</li>
+  <li>Form</li>
+  <li>Shape</li>
+  </ul>
 </div>
+</h1>
+
+<div class="content" id="content"></div>
 
 <script src="./src/js/main.js"></script>
 
