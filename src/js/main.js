@@ -1,9 +1,12 @@
-// var allPokemonApi = 'https://pokeapi.co/api/v2/pokemon/'
+var allPokemonApi = 'https://pokeapi.co/api/v2/pokemon/'
 var jigglypuffApi = "https://pokeapi.co/api/v2/pokemon/39/"
 var pikachuApi = "https://pokeapi.co/api/v2/pokemon/25/"
 var eeveeApi = "https://pokeapi.co/api/v2/pokemon/133/"
-var mewApi = "https://pokeapi.co/api/v2/pokemon/151/"
+var mewApi = "https://pokeapi.co/api/v2/pokemon/151/" // Currently there is no evolutions for this Pokémon
 var sylveonApi = "https://pokeapi.co/api/v2/pokemon/700/"
+//var wigglytuffApi = "https://pokeapi.co/api/v2/pokemon/40/"
+//var raichuApi = "https://pokeapi.co/api/v2/pokemon/26/"
+//var vaporeonApi = "https://pokeapi.co/api/v2/pokemon/134/"
 
 async function llamadaApi(pokemonUrl){
     let pokemon = await fetch(pokemonUrl)
@@ -34,7 +37,7 @@ function capitalize(string) {
 let jigglypuff = document.getElementById('Jigglypuff') //querySelector('#Jigglipuff')
 
 jigglypuff.addEventListener('click',function(){
-    //event.preventDefault()
+
   llamadaApi(jigglypuffApi)
 })
 

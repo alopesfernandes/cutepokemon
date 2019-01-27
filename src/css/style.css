@@ -1,0 +1,69 @@
+.header {
+  background-color: rgb(204, 203, 203);
+  text-align: center;
+  padding: 20px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.title{
+  text-align: center;
+  font-size: 300%;
+  font: bold;
+  color: orange;
+  }
+  .menu ul{
+    text-align: center;
+    float: center;
+    font-size: 150%;
+    color: orange;
+    font-family: "Helvetica", sans-serif;
+  }
+  .button{
+    text-align: center;
+    width:100px;
+    margin-left:auto;
+    margin-right:auto;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px 20px 16px 20px;
+  }
+  .buttonev{
+    color: white;
+    background-color: orange;
+    text-align: center;
+    width:100px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 10px;
+    border: 2px solid orange;
+    padding: 10px 20px 16px 20px;
+  }
+  .homebutton{
+    color: white;
+    background-color: orange;
+    border-radius: 5px;
+    border: 1px solid orange;
+    padding: 3px 5px 4px 5px;
+  }
+  .readme{
+    text-align: center;
+    font-size: 55%;
+    color: black;
+    font: bold;
+  }
+  .content{
+    background-color: white;
+    text-align: center;
+    font-size: 100%;
+    font: bold;
+    color: orange;
+  }
+  .footer{
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+  }

@@ -1,58 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <style>
-  .title{
-  text-align: center;
-  font-size: 300%;
-  font: bold;
-  color: hotpink;
-  }
-  .menu ul{
-    text-align: center;
-    float: center;
-    font-size: 150%;
-    color: hotpink;
-    font-family: "Helvetica", sans-serif;
-  }
-  .button{
-    width:100px;
-    margin-left:auto;
-    margin-right:auto;
-    color: white;
-    background-color: aquamarine;
-    border-radius: 10px;
-    border: 2px solid aquamarine;
-    padding: 10px 20px 16px 20px;
-  }
-  .homebutton{
-    color: white;
-    background-color: aquamarine;
-    border-radius: 5px;
-    border: 1px solid aquamarine;
-    padding: 3px 5px 4px 5px;
-  }
-  .readme{
-    text-align: center;
-    font-size: 55%;
-    color: grey;
-
-  }
-  .content{
-    background-color: beige;
-    text-align: center;
-    font-size: 100%;
-    font: bold;
-    color: hotpink;
-  }
-  </style>
-
-  <head>
+<div class="header">
+<div class="topnav">
+    <head>
   <div class="title">
     <b> Cutest Pokémon </b>
     <input type="button" class="homebutton" onclick="location.href='index.html';" value="Home"/>
   </div>
-  </head>
+  <link rel="stylesheet" href="./src/css/style.css">
+    </head>
 
 <body>
   <center>
@@ -62,17 +19,19 @@
       <button class="button" id="Eevee">EEVEE</button>
       <button class="button" id="Mew">MEW</button>
       <button class="button" id="Sylveon">SYLVEON</button>
-      <button class="button" id="Evolve">EVOLVE</button>
+      <button class="buttonev" id="Evolve">EVOLVE</button>
   </center>
 </div>
 </body>
 <h1>
-<div class="readme"> Here you'll find the cutest Pokemóns ever by: NAME, ABILITY and TYPE
-  <br> Click on the button EVOLVE to force your selected Pokemón to evolve and Home to start again </br>
+<div class="readme"> Here you'll find the cutest Pokémons ever by: <b>NAME, ABILITY and TYPE</b>
+  <br> Click on the button EVOLVE to force your selected Pokémon to evolve and Home to start it again </br>
 </div>
 </h1>
 
 <div class="content" id="content"></div>
+
+<div class="footer"><br>© 2013–2018 Paul Hallet and PokéAPI contributors. Pokémon and Pokémon character names are trademarks of Nintendo.</br>
 
 <script src="./src/js/main.js"></script>
 
